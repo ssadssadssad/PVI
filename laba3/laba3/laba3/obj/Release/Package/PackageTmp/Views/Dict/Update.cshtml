@@ -1,0 +1,49 @@
+﻿@model laba3.Models.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Изменить номер</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .container {
+            display: flex;           
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Изменить номер</h1>
+        @using (Html.BeginForm("UpdateSave", "Dict", FormMethod.Post))
+        {
+            
+            <br />@Html.TextBox("Name", Model.Name, new { @type = "text", @placeholder = "Введите имя", @readonly = true })
+            <br />@Html.TextBox("Phone", Model.Phone, new { @type = "text", @placeholder = "Новый номер" })
+            <span style="font-size: 15px; color: red">@Html.ValidationSummary()</span>
+            <input type="submit" value="Изменить" name="Update" />
+            <br />
+            @Html.ActionLink("Отмена", "Index", "Dict");
+        }
+    </div>
+</body>
+</html>

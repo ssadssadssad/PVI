@@ -1,0 +1,20 @@
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\bin\Debug\WinForm.exe.config
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\bin\Debug\WinForm.exe
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\bin\Debug\WinForm.pdb
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\obj\Debug\WinForm.csprojAssemblyReference.cache
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\obj\Debug\WinForm.Form1.resources
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\obj\Debug\WinForm.csproj.GenerateResource.cache
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\obj\Debug\WinForm.exe
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7b\WinForm\obj\Debug\WinForm.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\bin\Debug\WinForm.exe.config
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\bin\Debug\WinForm.exe
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\bin\Debug\WinForm.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\obj\Debug\WinForm.Form1.resources
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\obj\Debug\WinForm.csproj.GenerateResource.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\obj\Debug\WinForm.exe
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\obj\Debug\WinForm.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7b\laba7\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache

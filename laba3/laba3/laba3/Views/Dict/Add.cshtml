@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Добавить номер</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добавить номер</h1>
+        @using (Html.BeginForm("AddSave", "Dict", FormMethod.Post))
+        {
+            <br />
+            @Html.TextBox("Name", "", new { @type = "text", @placeholder = "Иванов И.И." })
+            <br />
+            @Html.TextBox("Phone", "", new { @type = "text", @placeholder = "6622053" })
+            <span style="font-size: 15px; color: red">@Html.ValidationSummary()</span>
+            <br />
+            <input type="submit" value="Добавить" name="Add" />
+            <br />
+            @Html.ActionLink("Отмена", "Index", "Dict");
+        }
+    </div>
+</body>
+</html>

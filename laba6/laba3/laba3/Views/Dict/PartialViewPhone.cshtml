@@ -1,0 +1,11 @@
+﻿@*@using SQLTelephoneDictionary*@
+@using TelephoneDictionaryDLL
+@model Person
+<li style="cursor: pointer; display: flex;">
+    <b>@Model.Name | @Model.Phone</b>
+    <div>
+        @Html.ActionLink(" | Обновить ", "Update", "Dict", new { name = Model.Name, phone = Model.Phone }, null)
+        @Html.ActionLink(" |Удалить", "Delete", "Dict", new { name = Model.Name, phone = Model.Phone }, null)
+    </div>
+</li>
+

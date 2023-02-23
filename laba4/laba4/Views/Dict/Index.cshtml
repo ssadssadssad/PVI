@@ -1,0 +1,51 @@
+﻿@model laba4.Models.DB
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Справочник</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        li {
+            cursor: pointer;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Телефонный справочник</h1>
+        <ul>
+            @foreach (var person in Model.GetAll())
+            {
+            <li>
+                Имя: @person.Name <br />номер: @person.Phone
+                <div>
+                    @Html.ActionLink("| Изменить", "Update", "Dict", new { name = person.Name, phone = person.Phone }, null)
+                    @Html.ActionLink("| Удалить |", "Delete", "Dict", new { name = person.Name, phone = person.Phone }, null)
+                </div>
+            </li>
+            }
+        </ul>
+        @Html.ActionLink("Добавить номер", "Add", "Dict")
+    </div>
+</body>
+</html>

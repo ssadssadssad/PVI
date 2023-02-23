@@ -1,0 +1,29 @@
+1) эндпоинт. три его составляющие
+Address: сетевой адрес сервиса.
+Binding: способ взаимодействия клиента с сервисом.
+Contract: описание интерфейса сервиса (что может сервис).
+
+Address составляющие (параметры):
+Scheme: транспортный протокол (http, tcp, msmq)
+MachineNane: полное доменное имя машины
+Port: порт (необязательный)
+Path: путь к сервису wcf
+
+Binding составляющие (параметры):
+transport: http/https, tcp, pipes, msmq, custom
+encoder: text, binary, mtom, custom
+security: ws, custom
+reliability: ws, custom
+protocol: ws, custom
+
+Contract составляющие (параметры):
+service contract: wsdl (интерфейс или класс определяет контракт сервиса) - единственный обязательный параметр
+data contract: xsd (тип определяет и реализует контракт данных и сериализуем)
+message contract: soap (сообщение)
+fault contract: soap Fault (определяет один или несколкьо fault элементов)
+
+2) структура wcf 
+contracts (data, message, service, policy and binding), 
+service runtime (behavior (error, metadata, instance, message)), 
+messaging (security, encoder), 
+activation and hosting (.exe, windows activating service, com+)

@@ -1,0 +1,38 @@
+﻿@*@using SQLTelephoneDictionary*@
+@using TelephoneDictionaryDLL
+@model DB
+@{
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Справочник</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            @foreach (var person in Model.GetAll())
+            {
+                @Html.Partial("PartialViewPhone", person)
+            }
+        </ul>
+        @Html.ActionLink("Добавить", "Add", "Dict")
+    </div>
+
+    @section Header {
+        <header>
+            <h1>Список телефонов</h1>
+        </header>
+    }
+
+    @section Footer {
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Alina Khartanovich</p>
+        </footer>
+    }
+</body>
+</html>
+

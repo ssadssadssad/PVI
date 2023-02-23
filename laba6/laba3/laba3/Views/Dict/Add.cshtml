@@ -1,0 +1,30 @@
+﻿@using Helpers
+@{
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Добавить</title>
+</head>
+<body>
+    <div class="container">
+        @Html.AddForm()
+    </div>
+
+    @section Header {
+        <header>
+            <h1>Добавить номер</h1>
+        </header>
+    }
+
+    @section Footer {
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Alina Khartanovich</p>
+        </footer>
+    }
+</body>
+</html>
+

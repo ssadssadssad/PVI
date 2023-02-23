@@ -1,0 +1,43 @@
+﻿@model laba3.Models.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Удалить номер</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Удалить номер</h1>
+        Имя: @Model.Name <br />номер: @Model.Phone
+        @using (Html.BeginForm("DeleteSave", "Dict", FormMethod.Post))
+        {
+            @Html.Hidden("Name", @Model.Name)
+            @Html.Hidden("Phone", @Model.Phone)
+            <br />
+            <input type="submit" value="Удалить" name="Delete" />
+            <br /><br />
+            @Html.ActionLink("Отмена", "Index", "Dict");
+        }
+    </div>
+</body>
+</html>

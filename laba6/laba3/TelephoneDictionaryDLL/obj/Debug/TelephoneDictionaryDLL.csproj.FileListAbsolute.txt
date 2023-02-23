@@ -1,0 +1,9 @@
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\bin\Debug\TelephoneDictionaryDLL.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\bin\Debug\TelephoneDictionaryDLL.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\obj\Debug\TelephoneDictionaryDLL.csproj.AssemblyReference.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\obj\Debug\TelephoneDictionaryDLL.csproj.CoreCompileInputs.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\obj\Debug\TelephoneDictionaryDLL.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\obj\Debug\TelephoneDictionaryDLL.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\bin\Debug\WebActivatorEx.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\TelephoneDictionaryDLL\obj\Debug\TelephoneDictionaryDLL.csproj.CopyComplete

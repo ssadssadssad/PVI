@@ -1,0 +1,32 @@
+﻿@using Helpers
+@*@using SQLTelephoneDictionary*@
+@using TelephoneDictionaryDLL
+@model Person
+@{
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Обновить</title>
+</head>
+<body>
+    <div class="container">
+        @Html.UpdateForm(Model.Name, Model.Phone)
+    </div>
+
+    @section Header {
+        <header>
+            <h1>Изменить номер</h1>
+        </header>
+    }
+
+    @section Footer {
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Alina Khartanovich</p>
+        </footer>
+    }
+</body>
+</html>

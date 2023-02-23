@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Справочник</title>
+    <style type="text/css">
+        body 
+        {
+            padding: 0;
+            margin: 0;
+        }        
+        .container 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1 
+        {
+            margin: 0;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        li 
+        {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Телефонный справочник</h1>
+        <ul id="list"></ul>
+        <br />
+        <form name="add">
+            <h3>Добавить телефон</h3>
+            <input id="addName" type="text" placeholder="Имя" required />
+            <input id="addPhone" type="text" placeholder="Телефон" required />
+            <br />
+            <input onclick="addPerson()" type="button" value="Добавить" name="Add" />
+        </form>
+        <br />
+        <form name="update">
+            <h3>Изменить телефон</h3>
+            <input id="updateName" type="text" placeholder="Имя существующего" required />
+            <input id="updatePhone" type="text" placeholder="Новый телефон" required />
+            <br />
+            <input onclick="updatePerson()" type="button" value="Изменить" name="Update" />
+        </form>
+        <form name="delete">
+            <h3>Удалить телефон</h3>
+            <input id="deletePhone" type="text" placeholder="Телефон существующего" required />
+            <br />
+            <input onclick="deletePerson()" type="button" value="Удалить" name="Delete" />
+        </form>
+    </div>
+    <script type="text/javascript">
+        window.onload = async () => {
+            const res = await fetch('/api/TS');
+            const list = await res.json();
+            let ul = document.getElementById('list');
+            list.map(tel =>
+                ul.innerHTML +=
+                `<li>
+                                <b>${tel.Name} | ${tel.Phone}</b>
+                            </li>`
+            );
+        }
+
+        async function addPerson() {
+            if (!Number(document.getElementById('addPhone').value) ||
+                document.getElementById('addPhone').value === '' ||
+                document.getElementById('addName').value === '') {
+                alert('Неверные данные');
+            } else {
+                fetch('/api/TS', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify({
+                        name: document.getElementById('addName').value,
+                        phone: document.getElementById('addPhone').value
+                    })
+                })
+                    .then(() => {
+                        window.location.href = '/';
+                    });
+            }
+        }
+
+        async function updatePerson() {
+            if (!Number(document.getElementById('updatePhone').value) ||
+                document.getElementById('updatePhone').value === '' ||
+                document.getElementById('updateName').value === '') {
+                alert('Неверные данные');
+            } else {
+                fetch('/api/TS', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify({
+                        name: document.getElementById('updateName').value,
+                        phone: document.getElementById('updatePhone').value
+                    })
+                })
+                    .then(() => {
+                        window.location.href = '/';
+                    });
+            }
+        }
+
+        async function deletePerson() {
+            if (!Number(document.getElementById('deletePhone').value) ||
+                document.getElementById('deletePhone').value === '') {
+                alert('Неверные данные');
+            } else {
+                fetch('/api/TS', {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify({
+                        phone: document.getElementById('deletePhone').value
+                    })
+                })
+                    .then(() => {
+                        window.location.href = '/';
+                    });
+            }
+        }
+    </script>
+</body>
+</html>

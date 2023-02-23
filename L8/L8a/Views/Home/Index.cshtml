@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <table>
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>Phone number</td>
+            <td>Update</td>
+            <td>Delete</td>
+        </tr>
+        </thead>
+        <tbody id="phoneDirectoryTable">
+        </tbody>
+    </table>
+</div>
+<div>
+    <h3>Add</h3>
+    <form>
+        <input type="text" id="name"/>
+        <input type="number" id="phoneNumber"/>
+        <input onclick="addUser()" type="button" value="Submit"/>
+    </form>
+</div>
+
+@section Scripts
+{
+    <script>
+    const API_URL = '/api/PhoneDirectory';
+    let users = [];
+    
+    function createRow(user) {
+        return `
+        <tr>
+            <td>
+                <input id="name-${user.id}" value="${user.name}"/>
+            </td>
+            <td>
+                <input id="phoneNumber-${user.id}" value="${user.phoneNumber}"/>
+            </td>
+            <td>
+                <button onclick="updateUser('${user.id}')" >Update</button>
+            </td>
+            <td>
+                <button onclick="deleteUser('${user.id}')" >Delete</button>
+            </td>
+        </tr>
+        `;
+    }
+    
+    async function deleteUser(id) {
+        const response = await fetch(`${API_URL}/${id}`, {
+            method: 'DELETE'
+        })
+        const deletedUser = await response.json();
+    
+        users = users.filter((user => (user.id !== deletedUser.id)));
+    
+        drawTable();
+    }
+    
+    async function updateUser(id) {
+        const name = document.querySelector(`#name-${id}`).value;
+        const phoneNumber = document.querySelector(`#phoneNumber-${id}`).value;
+        
+        const response = await fetch(`${API_URL}/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, phoneNumber })
+        })
+        const updatedUser = await response.json();
+        
+        users = users.map((user => {
+            if (user.id === updatedUser.id) {
+                return updatedUser;
+            } else {
+                return user;
+            }
+        }))
+        
+        drawTable();
+    }
+    
+    async function addUser() {
+        const name = document.querySelector('#name').value;
+        const phoneNumber = document.querySelector('#phoneNumber').value;
+    
+        const response = await fetch(`${API_URL}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, phoneNumber })
+        })
+        const newUser = await response.json();
+    
+        users.push(newUser);
+    
+        drawTable();
+    }
+    
+    function drawTable() {
+        users = users.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1);
+        const rows = users.map(createRow);
+        const table = document.querySelector('#phoneDirectoryTable');
+        table.innerHTML = rows.join('\n');
+    }
+    
+    (async () => {
+        const response = await fetch(`${API_URL}`, {
+            method: 'GET'
+        })
+        users = await response.json();
+    
+        drawTable();
+    })()
+    </script>
+}

@@ -1,0 +1,14 @@
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7c\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll.config
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7c\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7c\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.pdb
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7c\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7c\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7c\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb
+C:\Users\dmitr\Documents\Labs\ПИС\Lab7\Lab7c\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csprojAssemblyReference.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7c\laba7\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll.config
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7c\laba7\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7c\laba7\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7c\laba7\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csproj.AssemblyReference.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7c\laba7\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csproj.CoreCompileInputs.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7c\laba7\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\laba7c\laba7\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb

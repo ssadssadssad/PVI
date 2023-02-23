@@ -1,0 +1,13 @@
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\bin\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.deps.json
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\bin\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.runtimeconfig.json
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\bin\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.runtimeconfig.dev.json
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\bin\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\bin\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.csproj.AssemblyReference.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.AssemblyInfoInputs.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.AssemblyInfo.cs
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.csproj.CoreCompileInputs.cache
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.dll
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.pdb
+D:\ФИТ\4ый курс\1ый семестр\Internet\Лабораторные\lab6\laba3\SQLTelephoneDictionaryDLL\obj\Debug\netcoreapp3.1\SQLTelephoneDictionaryDLL.genruntimeconfig.cache

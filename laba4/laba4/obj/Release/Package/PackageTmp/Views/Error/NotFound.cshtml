@@ -1,0 +1,17 @@
+﻿
+@{
+    Layout = null;
+    HttpRequestBase req = ViewBag.Request;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NotFound</title>
+</head>
+<body>
+    <h1>@req.HttpMethod: @req.RawUrl не поддерживается</h1>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿@using TelephoneDictionaryDLL
+@*@using SQLTelephoneDictionary*@
+@model Person
+@{
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Удалить</title>
+</head>
+<body>
+    <div class="container">
+        <b>Удалить номер: @Model.Name | @Model.Phone?</b>
+        @using (Html.BeginForm("DeleteSave", "Dict", FormMethod.Post))
+        {
+            @Html.Hidden("Name", @Model.Name)
+            @Html.Hidden("Phone", @Model.Phone)
+            <input type="submit" value="Удалить" name="Delete" />
+            @Html.ActionLink("Отмена", "Index", "Dict");
+        }
+    </div>
+
+    @section Header {
+        <header>
+            <h1>Удалить номер</h1>
+        </header>
+    }
+
+    @section Footer {
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Alina Khartanovich</p>
+        </footer>
+    }
+</body>
+</html>
